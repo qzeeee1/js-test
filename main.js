@@ -1,22 +1,12 @@
+const numbers = [1,2,3,4]
+const fruits = ['apple','banana','cherry']
 
-const heropy = {
-  firstName: 'heropy',
-  lastName: 'park',
-  getFullName: function (){
-    return `${this.firstName} ${this.lastName}`
-  }
-}
+const a = numbers.map(numbers => {
+  return number < 3
+})
+console.log(a) // [true, true, false, false]
 
-console.log(heropy.getFullName());
-
-//
-
-const amy = {
-  firstName:'Amy',
-  lastName:'clarke',
-  getFullName: function(){
-    return `${this.firstName} ${this.lastName}`
-  }
-}
-
-console.log(amy.getFullName());
+const b = numbers.filter(number => {
+  return number < 3
+})
+console.log(b) // [1,2]
